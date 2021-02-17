@@ -34,7 +34,7 @@ The following dialog box will open for inputs to be entered.
 1. `Enter size of box region (x, y)`: two numbers separated by a comma or space. These 
 respective values give the x and y dimensions of the box that the walkers are constrained. 
 The larger the box is, the more area the walkers have and the long walkers will walk.
-**NOTE***: If this value is exceedingly large (total area > 250,000), then the code may take 
+**NOTE**: If this value is exceedingly large (total area > 250,000), then the code may take 
 several minutes to generate the image. 
 
 2. `Enter colormap name`: the name of the colormap to use for each walker. A list of native
@@ -52,6 +52,6 @@ containing the color of the background. Values must be separated by a space or c
 saved.
 
 6. `Resolution of image in dpi`: the resolution of the .png image in dpi (dots per inch). 
-High values will result in high resolution images. **NOTE***: Large values (>1000) can 
+High values will result in high resolution images. **NOTE**: Large values (>1000) can 
 require several minutes to save the image.
 
