@@ -7,6 +7,7 @@ generates an aesthetically pleasing image.
 
 
 Default image
+
 <img src="images/Random_walk_art.png" height=500/>
 
 ## Installation ##

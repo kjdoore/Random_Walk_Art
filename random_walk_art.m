@@ -10,7 +10,7 @@ prompt = {'Enter size of box region (x, y)',...
     'Resolution of image in dpi'};
 dlgtitle = 'Required Inputs';
 dims = [1 67];
-definput = {'80, 60','hsv','n','0 0 0','~/Desktop/','300'};
+definput = {'200, 150','hsv','n','0 0 0','~/Desktop/','300'};
 answer = inputdlg(prompt,dlgtitle,dims,definput);
 
 axis_dim = str2num(answer{1});
