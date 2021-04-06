@@ -33,7 +33,7 @@ The following dialog box will open for inputs to be entered.
 
 1. `Enter size of box region (x, y)`: two numbers separated by a comma or space. These 
 respective values give the x and y dimensions of the box that the walkers are constrained. 
-The larger the box is, the more area the walkers have and the long walkers will walk.
+The larger the box is, the more area the walkers have and longer they will walk.
 **NOTE**: If this value is exceedingly large (total area > 250,000), then the code may take 
 several minutes to generate the image. 
 
@@ -45,13 +45,16 @@ defined colormaps can also be used if they are defined before running.
 will likely cover larger areas of the image due to the walkers not being constrained by
 previous walkers.
 
-4. `Background color as normalized RGB triplet`: a normalized (max value of 1) RGB triplet
+4. `Enter line thickness`: the thickness of the line to use for each walker. Values larger
+than the default of 1 will result in thicker lines. Smaller values result in thinner lines.
+
+5. `Background color as normalized RGB triplet`: a normalized (max value of 1) RGB triplet
 containing the color of the background. Values must be separated by a space or comma.
 
-5. `Path of directory to save image`: the path to the directory that the image will be 
+6. `Path of directory to save image`: the path to the directory that the image will be 
 saved.
 
-6. `Resolution of image in dpi`: the resolution of the .png image in dpi (dots per inch). 
+7. `Resolution of image in dpi`: the resolution of the .png image in dpi (dots per inch). 
 High values will result in high resolution images. **NOTE**: Large values (>1000) can 
 require several minutes to save the image.
 
