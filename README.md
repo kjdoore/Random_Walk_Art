@@ -3,12 +3,18 @@ A code to generate an unique .png image of a series of random walks constrained 
 Each walker is required to stay within the box region and cannot walk on locations 
 previously walked by other walkers. This allows for clear separation of colors in the 
 resulting image. Each walk is uniquely colored based on an input colormap, and therefore 
-generates an aesthetically pleasing image. 
+generates an aesthetically pleasing image. The Gradient version requires walkers to start
+on the left hand side of image as room allows. This creates a gradient of color from left
+to right.
 
 
 Default image
 
 <img src="images/Random_walk_art.png" height=500/>
+
+Gradient image
+
+<img src="images/Random_walk_art_gradient.png" height=500/>
 
 ## Installation ##
 
@@ -21,10 +27,15 @@ git clone https://github.com/kjdoore/Random_Walk_Art.git
 
 ## Generating an Image ##
 
-To run the code to generate an image, enter the following into a MATLAB command line:
+To run the code to generate an default image, enter the following into a MATLAB command line:
 ```
 addpath('<install_dir>/Random_Walk_Art/')
 random_walk_art
+```
+or for the gradient version
+```
+addpath('<install_dir>/Random_Walk_Art/')
+random_walk_art_gradient
 ```
 
 The following dialog box will open for inputs to be entered.
@@ -55,6 +66,5 @@ containing the color of the background. Values must be separated by a space or c
 saved.
 
 7. `Resolution of image in dpi`: the resolution of the .png image in dpi (dots per inch). 
-High values will result in high resolution images. **NOTE**: Large values (>1000) can 
-require several minutes to save the image.
+High values will result in high resolution images.
 
